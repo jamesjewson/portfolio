@@ -4,12 +4,11 @@ This is my first website built with extra strong attention to detail, clarity, a
 In this site will be links to my portfolio projects.
 
 Some ways this site differs (or will differ in the future) from the template listed below:
--Increased opening transition time
--Different text
+X-Increased opening transition time
+X-Different text
 -New Background
 -Lighter, cleaner feel from original
-
-
+-Added submission post
 
 
 
