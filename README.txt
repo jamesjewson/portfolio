@@ -1,4 +1,12 @@
 James Jewson's Portfolio site
+Contact: jamesjewson.dev@gmail.com
+
+
+Socials-
+Twitter: https://twitter.com/JJewson
+LinkedIn: https://www.linkedin.com/in/jamesjewson/
+GitHub: https://github.com/jamesjewson
+
 
 This is my first website built with extra strong attention to detail, clarity, and a clean, professional look. 
 In this site will be links to my portfolio projects.
@@ -6,11 +14,10 @@ In this site will be links to my portfolio projects.
 Some ways this site differs (or will differ in the future) from the template listed below:
 X-Increased opening transition time
 X-Different text
--New Background
--Lighter, cleaner feel from original
+x-New Background
 -Added submission post
-
-
+-On scroll, go from section to section
+-Add new icon
 
 
 
