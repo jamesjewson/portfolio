@@ -15,9 +15,11 @@ Some ways this site differs (or will differ in the future) from the template lis
 X-Increased opening transition time
 X-Different text
 x-New Background
--Added submission post
+X-Added form submission 
 -On scroll, go from section to section
 -Add new icon
+-Add cleaned up todo list
+-
 
 
 
