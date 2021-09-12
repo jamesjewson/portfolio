@@ -1421,6 +1421,16 @@ input, select, textarea {
 				opacity: 0;
 			}
 
+			/* Begin my work */
+
+			#jjLogo {
+				max-width: 92%;
+				max-height: 92%;
+			}
+
+
+			/* End my work */
+
 		@media screen and (max-width: 980px) {
 
 			#header .content p br {
