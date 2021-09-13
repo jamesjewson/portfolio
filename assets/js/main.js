@@ -70,6 +70,8 @@
 			locked = false;
 
 		// Methods.
+
+
 			$main._show = function(id, initial) {
 
 				var $article = $main_articles.filter('#' + id);

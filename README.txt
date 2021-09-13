@@ -17,7 +17,7 @@ X-Different text
 x-New Background
 X-Added form submission 
 -On scroll, go from section to section
--Add new icon
+X-Add new icon
 -Add cleaned up todo list
 -
 
