@@ -11,27 +11,6 @@ GitHub: https://github.com/jamesjewson
 This is my first website built with extra strong attention to detail, clarity, and a clean, professional look. 
 In this site will be links to my portfolio projects.
 
-Some ways this site differs (or will differ in the future) from the template listed below:
-X-Increased opening transition time
-X-Different text
-x-New Background
-X-Added form submission 
--On scroll, go from section to section
-X-Add new icon
--Add cleaned up todo list
--
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
