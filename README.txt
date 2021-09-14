@@ -11,10 +11,6 @@ GitHub: https://github.com/jamesjewson
 This is my first website built with extra strong attention to detail, clarity, and a clean, professional look. 
 In this site will be links to my portfolio projects.
 
-
-
-
-
 This site uses the following template.
 
 Dimension by HTML5 UP
