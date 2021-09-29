@@ -1428,6 +1428,18 @@ input, select, textarea {
 				max-height: 92%;
 			}
 
+			.portfolioImg {
+				height: auto;
+				width: 100%;
+			}
+
+			.portItem{
+				padding: 25px;
+				list-style-type:none;
+				list-style-position:outside;
+				border: solid white 5px;
+				text-align: center;
+			}
 
 			/* End my work */
 
