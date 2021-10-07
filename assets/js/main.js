@@ -395,47 +395,44 @@
 //SCROLLING FUNCTIONALITY WIP
 
 
-//On bottom of page scroll, hide article, show next article. If article is contact, do nothing
 
+$(window).on('wheel', function(){ 
+	let atBottom = $(window).scrollTop() + $(window).height() == $(document).height()
 
-//Hi everyone! I'm looking to add some scrolling functionality to my portfolio site. The site is based off of an HTML5UP site, the details of which can be found in the LICENSE.txt. 
-
-//Right now, I need to click on each button to open up each article, and I'd like to add in the ability to scroll from one article to the next. So far, I've been able to figure out how to hide articles as the user scrolls to the bottom of the page, but haven't been able to get the next article visible.
-
-//Simply put, scrolling with nothing visible should open #intro, once scrolled to the bottom of #intro should open #work, etc etc. I've tried .addClass('active') on articles targeted by ID, tried the .next() method, perhaps incorrectly, .getElementById(), and .show()/.hide() all to no avail. I'm not sure if I'm not adding in the correct class(es), need to remove more classes, or am just missing something obvious.
-
-//Most of the code is from the template. My work in progress begins on line ~400 in assets/js/main.js
-
-
-
-$(window).on('scroll', function(){
-	if($(window).scrollTop() + $(window).height() == $(document).height()) {
-		let $article = $('article')
+//Scroll down to see articles
+    if(atBottom) {
 		
-			if($('#about').hasClass('active')){
-				console.log('about is gone')
-				$article.removeClass('active');
-			//Need to make the next article visible
+		 if($('#intro').is(':visible')){
 
-
+				window.location.href = '#work'
+				$('#intro').is(':hidden')
 			}
-			//Make sure id selectors are working
-			else if($('#intro').hasClass('active')){
-				console.log('intro is active')
+			else if($('#work').is(':visible')){
 
+				window.location.href = '#about'
+				$('#work').is(':hidden')
 			}
 
+			else if($('#about').is(':visible')){
+				
+				window.location.href = '#contact'
+				$('#about').is(':hidden')
 
-			console.log('bottom of page')
-			//$article.hide();
-		
-		
-		
-		
+			}
+			else if($('#contact').is(':visible')){
+				window.location.href= '#'
+				$('#contact').is(':hidden')
+			}else {
+				
+				$('#work').removeClass('active')
+				window.location.href= '#intro'
+			}
+	} 	
 
-	}
-	
 })
+
+
+
 
 
 //On top of page scroll, hide article, show previous article

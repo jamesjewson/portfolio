@@ -1421,7 +1421,7 @@ input, select, textarea {
 				opacity: 0;
 			}
 
-			/* Begin my work */
+	/* Begin my work */
 
 			#jjLogo {
 				max-width: 92%;
@@ -1441,7 +1441,12 @@ input, select, textarea {
 				text-align: center;
 			}
 
-			/* End my work */
+			.languages li {
+				list-style-type: none;
+			}
+
+
+	/* End my work */
 
 		@media screen and (max-width: 980px) {
 
