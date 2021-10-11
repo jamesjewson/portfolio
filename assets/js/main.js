@@ -400,9 +400,7 @@
 
 
 
-//SCROLLING FUNCTIONALITY WIP
-
-
+//Scroll Through Articles
 
 let totalScrollDown = 0;
 let scrollBuffer;
@@ -430,7 +428,7 @@ $(window).on("wheel", (event) => {
 				window.location.href = "#intro";
 				totalScrollDown = 200
 			  }		
-		}, 200);
+		}, 100);
 	  
 	}
 	if (totalScrollDown >= 1200 && totalScrollDown < 2200) {
@@ -439,54 +437,37 @@ $(window).on("wheel", (event) => {
 				window.location.href = "#work";
 				totalScrollDown = 1200
 			  }		
-		}, 200);
+		}, 100);
 	  
 	}
-	if (totalScrollDown >= 2200 && totalScrollDown < 3200) {
+	if (totalScrollDown >= 2200 && totalScrollDown < 3800) {
 		setTimeout(() => {
 			if (currentLocation != "about") {
 				window.location.href = "#about";
 				totalScrollDown = 2200
 			  }		
-		}, 200);
+		}, 100);
 	  
 	}
-	if (totalScrollDown >= 3200 && totalScrollDown < 4200) {
+	if (totalScrollDown >= 3800 && totalScrollDown < 5200) {
 		setTimeout(() => {
 			if (currentLocation != "contact") {
 				window.location.href = "#contact";
-				totalScrollDown = 3200
+				totalScrollDown = 3800
 			  }		
-		}, 200);
+		}, 100);
 	  
 	}
-	if (totalScrollDown >= 4200) {
+	if (totalScrollDown >= 5200) {
 		if (currentLocation != "#") {
 		  window.location.href = "#";
 		  setTimeout(() => {
 			  totalScrollDown = 0
-		  }, 200);
+		  }, 100);
 		}
 	  }
-  }, 200);
+  }, 100);
 })
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 		// Initialize.
