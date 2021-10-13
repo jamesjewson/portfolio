@@ -13,7 +13,9 @@
 
 # What is this site?
 
-- This website was built to display my CSS, HTML, and JavaScript abilities, as well as serving as a place to showcase my portfolio. It is based on the following template:
+- This website was built to display my CSS, HTML, and JavaScript abilities, as well as serving as a place to showcase my portfolio. 
+- In addition to content and minor css changes, I added scrolling functionality and activated contact form submission. 
+- It is based on the following template:
 
 # Dimension by HTML5 UP
 html5up.net | @ajlkn
@@ -46,15 +48,3 @@ Credits:
 		jQuery (jquery.com)
 		Responsive Tools (github.com/ajlkn/responsive-tools)
 
-
-
-# If I asked you for help (Hi Josh)
-- Most everything that I changed or am attempting to mainuplate is in main.js. This does not mean I won't need to change things in other files
-
-- I'm attempting to make it possible to scroll through the articles instead of needing to click on each nav link. My issue is that sometimes more than one article is given the "active" class at a time. Other times the screen size gets a little messed up, and makes the page really long and places the article in a weird spot.
-
-
-- Line 314 resets Scrolldown to 0 on body click
-- Line ~400 begins scroll functionality
-- I THINK I might be able to do something either with the code on util.js:275 or $main._show on main.js:75. 
-- I tried on scroll if(window.location.href  = "#ID" and is at the botttom of the page){show the next one} and had the same issues. Let me know if this is confusing.
