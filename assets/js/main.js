@@ -70,7 +70,8 @@
 			locked = false;
 
 		// Methods.
-
+		
+//This shows everything
 
 			$main._show = function(id, initial) {
 
@@ -199,6 +200,9 @@
 
 			};
 
+			
+			
+//This closes everything
 			$main._hide = function(addState) {
 
 				var $article = $main_articles.filter('.active');
@@ -397,75 +401,74 @@
 
 
 
-//SCROLLING FUNCTIONALITY WIP
+//Scroll Through Articles
 
-
-
-let totalScrollDown = 0;
-let scrollBuffer;
-$(window).on("wheel", (event) => {
-  totalScrollDown += event.originalEvent.deltaY;
-  let currentLocation;
-  clearTimeout(scrollBuffer);
-  scrollBuffer = setTimeout(() => {
-	if (window.location.href.split("#")[1]) {
-	  currentLocation = window.location.href.split("#")[1];
-	}
-	if (totalScrollDown < 0) {
-	  totalScrollDown = 0;
-	}
-	if (totalScrollDown > 2800) {
-	  totalScrollDown = 2800;
-	}
-	if (totalScrollDown < 200) {
-	  window.location.href = "#";
-	}
-	if (totalScrollDown >= 200 && totalScrollDown < 800) {
-	  if (currentLocation != "intro") {
-		window.location.href = "#intro";
-	
-	  }
-	}
-	if (totalScrollDown >= 800 && totalScrollDown < 1400) {
-	  if (currentLocation != "work") {
-		window.location.href = "#work";
-	
-	  }
-	}
-	if (totalScrollDown >= 1400 && totalScrollDown < 2600) {
-	  if (currentLocation != "about") {
-		window.location.href = "#about";
-	  }
-	}
-	if (totalScrollDown >= 2600) {
-	  if (currentLocation != "contact") {
-		window.location.href = "#contact";
-	  }
-	}
-	// if (totalScrollDown >= 2800) {
-	// 	if (currentLocation != "#") {
-	// 	  window.location.href = "#";
-	// 	}
-	//   }
-  }, 200);
-})
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// let totalScrollDown = 0;
+// let scrollBuffer;
+// $(window).on("wheel", (event) => {
+//   totalScrollDown += event.originalEvent.deltaY;
+//   console.log(totalScrollDown);
+//   let currentLocation;
+//   clearTimeout(scrollBuffer);
+//   scrollBuffer = setTimeout(() => {
+// 	if (window.location.href.split("#")[1]) {
+// 	  currentLocation = window.location.href.split("#")[1];
+// 	}
+// 	if (totalScrollDown < 0) {
+// 	  totalScrollDown = 0;
+// 	}
+// 	if (totalScrollDown > 6000) {
+// 	  totalScrollDown = 6000;
+// 	}
+// 	if (totalScrollDown < 200) {
+// 	  window.location.href = "#";
+// 	}
+// 	if (totalScrollDown >= 200 && totalScrollDown < 1200) {
+// 		setTimeout(() => {
+// 			if (currentLocation != "intro") {
+// 				window.location.href = "#intro";
+// 				totalScrollDown = 200
+// 			  }		
+// 		}, 100);
+	  
+// 	}
+// 	if (totalScrollDown >= 1200 && totalScrollDown < 2200) {
+// 		setTimeout(() => {
+// 			if (currentLocation != "work") {
+// 				window.location.href = "#work";
+// 				totalScrollDown = 1200
+// 			  }		
+// 		}, 100);
+	  
+// 	}
+// 	if (totalScrollDown >= 2200 && totalScrollDown < 3800) {
+// 		setTimeout(() => {
+// 			if (currentLocation != "about") {
+// 				window.location.href = "#about";
+// 				totalScrollDown = 2200
+// 			  }		
+// 		}, 100);
+	  
+// 	}
+// 	if (totalScrollDown >= 3800 && totalScrollDown < 5200) {
+// 		setTimeout(() => {
+// 			if (currentLocation != "contact") {
+// 				window.location.href = "#contact";
+// 				totalScrollDown = 3800
+// 			  }		
+// 		}, 100);
+	  
+// 	}
+// 	if (totalScrollDown >= 5200) {
+// 		if (currentLocation != "#") {
+// 		  window.location.href = "#";
+// 		  setTimeout(() => {
+// 			  totalScrollDown = 0
+// 		  }, 100);
+// 		}
+// 	  }
+//   }, 100);
+// })
 
 
 		// Initialize.
