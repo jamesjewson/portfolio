@@ -298,6 +298,7 @@
 						.appendTo($this)
 						.on('click', function() {
 							location.hash = '';
+							totalScrollDown = 0;
 						});
 
 				// Prevent clicks from inside article from bubbling.
