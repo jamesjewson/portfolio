@@ -315,7 +315,7 @@
 			$body.on('click', function(event) {
 
 				//Set Scrolldown WIP
-					totalScrollDown = 0;
+				//	totalScrollDown = 0;
 				// Article visible? Hide.
 					if ($body.hasClass('is-article-visible'))
 						$main._hide(true);
@@ -342,7 +342,7 @@
 				}
 
 			});
-
+//This is the click even that makes everything show up
 			$window.on('hashchange', function(event) {
 
 				// Empty hash?
@@ -357,7 +357,7 @@
 							$main._hide();
 
 					}
-
+//This is where it finds the article and shows it
 				// Otherwise, check for a matching article.
 					else if ($main_articles.filter(location.hash).length > 0) {
 
@@ -401,6 +401,31 @@
 
 
 //Scroll Through Articles
+
+// If scolled to bottom of page && location.hash == "" || "#", then $main._show(location.hash.ARTICLEHASH) && close all other articles
+//If scrolled to bottom && location.hash == "#intro", then etc.... 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // let totalScrollDown = 0;
 // let scrollBuffer;
