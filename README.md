@@ -48,3 +48,7 @@ Credits:
 		jQuery (jquery.com)
 		Responsive Tools (github.com/ajlkn/responsive-tools)
 
+# Future Content 
+- Add Links to Socials on Homepage
+- Add Scrolling Functionality
+- Make Clickable to show portfolio projects
