@@ -406,7 +406,7 @@
 //If scrolled to bottom && location.hash == "#intro", then etc.... 
 
 
-
+$(".reveal").addClass("blue")
 
 
 

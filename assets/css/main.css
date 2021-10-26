@@ -1446,6 +1446,27 @@ input, select, textarea {
 			}
 
 
+			.between {
+				display: flex;
+				justify-content:space-between;
+			}
+
+			#contactArrow {
+				margin-top: -65px;
+			}
+
+			#introArrow {
+				justify-content: right;
+			}
+
+			.seeHide{
+				display:none;
+			}
+
+			
+
+
+
 	/* End my work */
 
 		@media screen and (max-width: 980px) {

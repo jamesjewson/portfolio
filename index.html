@@ -35,9 +35,9 @@
 							</ul>
 						</nav>
 						<ul class="icons">
-							<li><a href="https://twitter.com/JJewson" target="_blank" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-							<li><a href="https://www.linkedin.com/in/jamesjewson/" target="_blank" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
-							<li><a href="https://github.com/jamesjewson" target="_blank" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+							<li><a href="https://twitter.com/JJewson" target="_blank" class="icon brands fa-twitter"><span class="label"></span></a></li>
+							<li><a href="https://www.linkedin.com/in/jamesjewson/" target="_blank" class="icon brands fa-linkedin"><span class="label"></span></a></li>
+							<li><a href="https://github.com/jamesjewson" target="_blank" class="icon brands fa-github"><span class="label"></span></a></li>
 						</ul>
 					</header>
 
@@ -49,6 +49,9 @@
 								<h2 class="major">Intro</h2>
 								<span class="image main"><img src="images/jimmyIntro.jpg" alt="James Jewson headshot" /></span>
 								<p>Hi! My name is James Jewson, and I'm a software developer specializing in full stack web applications. I'm an excellent problem solver and enjoy all the challenges that come with building beautiful web applications. I take pride in my work, and only deliver professional, clean, polished products. Check out some of my <a href="#work">projects here</a>.</p>
+								<ul class="icons between" id="introArrow">
+									<li><a href="#work" class="fa fa-chevron-right"><span class="label"></span></a></li>
+								</ul>
 							</article>
 
 						<!-- Work -->
@@ -59,22 +62,29 @@
 										<li class="portItem" id="todoList">
 											<a href="https://todomvcauthapp.herokuapp.com/" target="_blank">
 												<h3 class="projectName">To Do List with Microsoft Authentication</h3>
-												<img class="portfolioImg" src="images/task-list-screenshot.png" alt=""></a>
-												<p>This "To Do" web application allows you to log in with your Microsoft account, create to do items, mark those items as complete, and delete them. The site also features a working clock to help you manage your time.</p>
-												<h4>This project showcases the following:</h4>
-												<ul class="languages">
-													<li>JavaScript</li>
-													<li>HTML5</li>
-													<li>CSS</li>
-													<li>MongoDB</li>
-													<li>EJS</li>
-												</ul>
+												<!-- <i class="fa fa-caret-left reveal" aria-hidden="true"></i> -->
+												<div class="">
+													<img class="portfolioImg" src="images/task-list-screenshot.png" alt=""></a>
+													<p>This "To Do" web application allows you to log in with your Microsoft account, create to do items, mark those items as complete, and delete them. The site also features a working clock to help you manage your time.</p>
+													<h4>This project showcases the following:</h4>
+													<ul class="languages">
+														<li>JavaScript</li>
+														<li>HTML5</li>
+														<li>CSS</li>
+														<li>MongoDB</li>
+														<li>EJS</li>
+													</ul>
+												</div>
+												
 										</li>
 
 									</ul>
 									
 								</div>
-								
+								<ul class="icons between">
+									<li><a href="#intro" class="fa fa-chevron-left"><span class="label"></span></a></li>
+									<li><a href="#about" class="fa fa-chevron-right"><span class="label"></span></a></li>
+								</ul>
 							</article>
 
 						<!-- About -->
@@ -96,10 +106,17 @@
 									<li>jQuery</li>
 									<li>React</li>
 								</ul>
+								<ul class="icons between">
+									<li><a href="#work" class="fa fa-chevron-left"><span class="label"></span></a></li>
+									<li><a href="#contact" class="fa fa-chevron-right"><span class="label"></span></a></li>
+								</ul>
 							</article>
 
 						<!-- Contact -->
 							<article id="contact">
+								<ul class="icons between" id="contactArrow">
+									<li><a href="#about" class="fa fa-chevron-left"><span class="label"></span></a></li>
+								</ul>
 								<h2 class="major">Contact</h2>
 								<form name="contact" method="post" data-netlify="true" action="#">
 									<div class="fields">
@@ -126,6 +143,7 @@
 									<li><a href="https://www.linkedin.com/in/jamesjewson/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
 									<li><a href="https://github.com/jamesjewson" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
 								</ul>
+								
 							</article>
 
 						<!-- Elements -->
