@@ -11,11 +11,7 @@
 # <a href="https://jamesjewson.netlify.app/#contact">Contact Me Here</a>
 --- 
 
-# What is this site?
 
-- This website was built to display my CSS, HTML, and JavaScript abilities, as well as serving as a place to showcase my portfolio. 
-- In addition to content and minor css changes, I added scrolling functionality and activated contact form submission. 
-- It is based on the following template:
 
 # Dimension by HTML5 UP
 html5up.net | @ajlkn
@@ -49,6 +45,4 @@ Credits:
 		Responsive Tools (github.com/ajlkn/responsive-tools)
 
 # Future Content 
-- Add Links to Socials on Homepage
-- Add Scrolling Functionality
 - Make Clickable to show portfolio projects
