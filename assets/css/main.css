@@ -205,17 +205,17 @@ input, select, textarea {
 	}
 
 	h2 {
-		font-size: 1.5rem;
+		font-size: 2rem;
 		line-height: 1.4;
 		letter-spacing: 0.5rem;
 	}
 
 	h3 {
-		font-size: 1rem;
+		font-size: 1.5rem;
 	}
 
 	h4 {
-		font-size: 0.8rem;
+		font-size: 1rem;
 	}
 
 	h5 {
@@ -1112,6 +1112,7 @@ input, select, textarea {
 		-ms-transform: scale(1.0);
 		transform: scale(1.0);
 		-webkit-backface-visibility: hidden;
+		backface-visibility: hidden;
 		position: fixed;
 		top: 0;
 		left: 0;
@@ -1433,12 +1434,31 @@ input, select, textarea {
 				width: 100%;
 			}
 
+			.portfolioImg{
+				transition:.25s;
+				border: 5px solid white;
+			}
+
+
+			.portfolioImg:hover{
+				border: 5px solid rgb(0,255,153);
+				transition:.25s;
+			}
+
 			.portItem{
 				padding: 25px;
 				list-style-type:none;
 				list-style-position:outside;
 				border: solid white 5px;
 				text-align: center;
+				margin-bottom: 15px;
+			}
+
+			.projectLink{
+				transition:.25s;
+			}
+			.projectLink:hover{
+				color:rgb(0,255,153);
 			}
 
 			.languages li {
@@ -1452,7 +1472,7 @@ input, select, textarea {
 			}
 
 			#contactArrow {
-				margin-top: -65px;
+				margin-top: -45px;
 			}
 
 			#introArrow {
@@ -1463,9 +1483,29 @@ input, select, textarea {
 				display:none;
 			}
 
+			.sourceCode{
+				margin-top: 10px;
+				font-size: 1.2rem;
+			}
 			
+			.skillsListContainer{
+				display: flex;
+				flex-direction: row;
+			}
 
+			.skillsListLeft{
+				width: 50%;
+			}
 
+			.skillsListRight{
+				width: 50%;
+			}
+
+			.emphSkill{
+				font-weight: bold;
+				font-size: 1.5rem;
+
+			}
 
 	/* End my work */
 
