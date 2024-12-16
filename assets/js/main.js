@@ -401,6 +401,87 @@
 
 
 //Scroll Through Articles
+$(window).on("wheel", (event) => {
+
+	var scrollDirection;
+
+	//https://stackoverflow.com/questions/4326845/how-can-i-determine-the-direction-of-a-jquery-scroll-event
+    if (event.originalEvent.wheelDelta >= 0) {
+		scrollDirection = "up";
+    }
+    else {
+		scrollDirection = "down"
+    }
+
+	var pageOrderArray = [
+		"#",
+		"#intro",
+		"#work",
+		"#about",
+		"#contact"
+	];
+
+	var currentLocation;
+
+	if (window.location.href.split("#")[1]) {
+	  currentLocation = "#" + window.location.href.split("#")[1];
+	}
+	//If the above fails, just default for the home page
+	else{
+		currentLocation = "#"
+	}
+
+	var currentPageIndex = pageOrderArray.indexOf(currentLocation);
+
+	//indexOf returns -1 if match isn't found. This shouldn't happen, but just in case.
+	if(currentPageIndex < 0){
+		currentPageIndex = 0;
+	}
+
+	//If going up and hitting the top of the page
+	if(scrollDirection == "up" && $(window).scrollTop() === 0){
+		//If we're already at the top we can't go any farther up from there
+		if(currentPageIndex > 0){
+
+			var newPageIndex = currentPageIndex - 1;
+			var newPageLocation = pageOrderArray[newPageIndex];
+			//If new page can't be grabbed for some reason, just report an error for now
+			if(!newPageLocation){
+				console.log("Couldn't retrieve page up info.");
+			}
+			else{
+				window.location.href = newPageLocation;
+			}
+		}
+	}
+	//If going down and hitting the bottom of the page
+	//https://stackoverflow.com/questions/3898130/check-if-a-user-has-scrolled-to-the-bottom
+	else if(scrollDirection == "down" && $(window).scrollTop() + $(window).height() >= $(document).height()) {
+		//If we're already at the bottom we can't go any farther down from there
+		if(currentPageIndex < pageOrderArray.length-1){
+
+			var newPageIndex = currentPageIndex + 1;
+			var newPageLocation = pageOrderArray[newPageIndex];
+			//If new page can't be grabbed for some reason, just report an error for now
+			if(!newPageLocation){
+				console.log("Couldn't retrieve page down info.");
+			}
+			else{
+				window.location.href = newPageLocation;
+			}
+		}
+	}
+
+	// if($(window).scrollTop() === 0) {
+	// 	alert("top!");
+	// 	console.log($(window).scrollTop());
+	// }
+
+	// //https://stackoverflow.com/questions/3898130/check-if-a-user-has-scrolled-to-the-bottom
+	// if($(window).scrollTop() + $(window).height() >= $(document).height()) {
+	// 	alert("bottom!");
+	// }
+})
 
 // If scolled to bottom of page && location.hash == "" || "#", then $main._show(location.hash.ARTICLEHASH) && close all other articles
 //If scrolled to bottom && location.hash == "#intro", then etc.... 
